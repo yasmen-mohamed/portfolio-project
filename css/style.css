@@ -11,6 +11,7 @@
 body
 {
     overflow-x: hidden; 
+    overflow: hidden;
 }
 .min-color
 {
@@ -149,6 +150,11 @@ header
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.8rem;
 }
+.btnCv
+{
+    color: #da2c38 !important;
+    color: #fff !important;
+}
 /*End About Me*/
 
 /*Start Skills*/
@@ -173,6 +179,7 @@ header
     border: solid 2px #ddd;
     border-radius: 20%;
     cursor: pointer;
+    height: 12rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 .skillLayer
@@ -192,7 +199,7 @@ header
 {
     top: 50%;
 }
-.mquiry
+.mquiry/*Database Design img*/
 {
     height: 95%;
 }
@@ -214,22 +221,39 @@ header
     color: #1e1e1e;
     border-radius: 10px;
     margin-bottom: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+    height: 38rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+@media only screen and (max-width: 600px) {
+    .portfolio-item {
+        height: 46rem;
+    }
+  }
 .portfolio-icon
 {
     padding-top: 4rem;
     padding-bottom: 1rem;
 }
-.portfolio-icon i
+.portfolio-icon i,.imgFood
 {
     font-size: 4rem;
     border: solid 10px #da2c38;
-    color: #000;
+    color: #000 !important;
     border-radius: 50%;
     padding: 20px;
     transition: 0.2s;
+}
+.portfolio-item .imgFood
+{
+    width: 8rem;
+    height: 8rem;
+}
+.portfolio-item:hover .imgFood
+{
+    color: #fff !important;
+   background-color:  #da2c38;
+   border-color: #bcd3eb;
 }
 .portfolio-item:hover i
 {
@@ -253,7 +277,19 @@ header
     bottom: 20%;
     left: 35%;
 }
-
+.we
+{
+    width: 60%;
+    height: 60%;
+    /* border-radius: 50%; */
+}
+ul li
+{
+    list-style:none;
+   color: black;
+   font-weight: 400;
+   text-align: left;
+}
 /*End Portfolio*/
 
 /*Start Contact Me*/
@@ -309,3 +345,68 @@ header
       
   }
 /*End Contact Me*/
+
+/*Start loading screen*/
+#loading
+{
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999;
+}
+.spinner {
+    margin: 220px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #da2c38;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+/*End loading screen*/
