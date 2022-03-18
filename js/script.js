@@ -74,14 +74,32 @@ $(document).ready(function()
     $("#loading").fadeOut(2000);
     $("body").css("overflow","auto");
 
-    // //typed.js
-    // var typed = new Typed('.element', {
-    //     // Waits 1000ms after typing "First"
-    //     strings: ['Front-end Developer ^3000', 'rooooot'],
-    //     loopCount: Infinity,
-    //     typeSpeed: 50,
-    //     showCursor: true,
-    //     cursorChar: '|',
-    //     autoInsertCss: true,
-    //   });
+    //////type.js
+    var typed = new Typed('.type', {
+        strings: [
+            'Full-stack Developer',
+            'Freelancer'
+        ],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true,
+      });
+})
+
+//loading screen
+$(document).ready(function()
+{
+    $("#loading").fadeOut(2000);
+    $("body").css("overflow","auto");
+
+    //////type.js
+    var typed = new Typed('.element', {
+        strings: [
+            'Front-end Developer',
+            'Freelancer'
+        ],
+        typeSpeed: 70,
+        backSpeed: 70,
+        loop: true
+      });
 })
