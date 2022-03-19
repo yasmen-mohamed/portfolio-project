@@ -105,7 +105,11 @@ header
     /* color: #f5b535; */
     color: #da2c38;
 }
-
+@media only screen and (max-width: 600px) {
+    .header-content :is(h1,h2,.header-icons) {
+      margin-left: 10px !important;
+    }
+  }
 /*End Header*/
 
 /*Start About Me*/
@@ -154,7 +158,12 @@ header
 {
     color: #da2c38 !important;
     color: #fff !important;
+    /* transition: all 2s; */
 }
+/* .btnCv:hover
+{
+    background: linear-gradient(to bottom right, #ff6057, #b5179e) !important;
+} */
 /*End About Me*/
 
 /*Start Skills*/
