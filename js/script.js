@@ -75,7 +75,7 @@ $(document).ready(function()
     $("body").css("overflow","auto");
 
     //////type.js
-    var typed = new Typed('.element', {
+    var typed = new Typed('.elemen', {
         strings: [
             'Fullstack Developer',
             'Freelancer',
@@ -84,9 +84,9 @@ $(document).ready(function()
         typeSpeed: 70,
         backSpeed: 70,
         loop: true,
-        showCursor: false,
-        cursorChar: '|',
-        autoInsertCss: true,
+        // showCursor: false,
+        // cursorChar: '|',
+        // autoInsertCss: true,
       });
 })
 
